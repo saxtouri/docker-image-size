@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from setuptools import setup
-from dis import __version__
+from docreg import __version__
 
 setup(
     name='docker-image-size',
@@ -30,7 +30,7 @@ setup(
     author_email='saxtouri@gmail.com',
     maintainer='Stavros Sachtouris',
     maintainer_email='saxtouri@gmail.com',
-    packages=['dis', ],
+    packages=['docreg', ],
     classifiers=[
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 2.7',
@@ -48,5 +48,5 @@ setup(
             'docker-image-size = dis.cli:cli',
         ]
     },
-    install_requires=[]
+    install_requires=['requests', ]
 )
