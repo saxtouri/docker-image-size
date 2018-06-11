@@ -14,3 +14,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 __version__ = '0.1'
+
+
+class DockerRegistryClientException(Exception):
+
+    def __init__(self, *args, **kw):
+        super(DockerRegistryClientException, self).__init__(*args, **kw)
